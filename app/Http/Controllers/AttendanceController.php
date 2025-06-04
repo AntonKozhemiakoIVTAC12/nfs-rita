@@ -61,7 +61,6 @@ class AttendanceController extends Controller
         return response()->json([
             'message' => 'Посещение успешно зарегистрировано',
             'attendance_id' => $attendance->attendance_id,
-            'timestamp' => $attendance->timestamp,
             'student' => [
                 'student_id' => $student->student_id,
                 'full_name' => $student->full_name,

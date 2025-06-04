@@ -44,3 +44,5 @@ Route::get('/lesson-types', [LessonTypeController::class, 'index']);
 
 // Занятия
 Route::post('/lessons', [LessonController::class, 'store']);
+Route::patch('/lessons/{id}/status', [LessonController::class, 'updateStatus']);
+Route::get('/lessons/{id}/export', [LessonController::class, 'export']);
